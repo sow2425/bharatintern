@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2daed2;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.weather-app {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(22, 22, 22, 0.1);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #3571b0;
+    border-radius: 5px;
+    font-size: 1rem;
+    height: 2.5rem;
+}
+
+.search-btn {
+    background-color: #45ba49;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #32a032;
+}
+
+.city-date-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.city-date-section .city {
+    font-size: 2rem;
+    color: #1e1d1d;
+}
+
+.city-date-section .date {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #111111;
+}
+
+.temperature-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.temperature-info .temp {
+    font-size: 6rem;
+    color: #464444;
+}
+
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperature-info .description i {
+    font-size: 1.5rem;
+    color: #fa8152;
+}
+
+.temperature-info .description span {
+    font-size: 1.5rem;
+    color: #080608;
+}
+
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    background-color: #f9f8f9;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(156, 107, 107, 0.1);
+}
+
+.additional-info .material-icons {
+    font-size: 3rem;
+    color: #626262;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+    color: #0f0f0f;
+}
